@@ -1,0 +1,65 @@
+/* =====================================================================
+* Pier Solar That's Slippery Auto-Play
+* 
+*
+*  Details:
+*    Clicking Right-Stick will toggle auto-play mode on/off.
+* ===================================================================== */
+
+
+//
+// DEFINES
+// --------------------------------------------------------------------
+
+define TWAIT_MOVE       = 100;               // Time to wait between moves
+
+
+//
+// DATA SEGMENT
+// --------------------------------------------------------------------
+// (none required)
+
+
+//
+// REMAPPINGS
+// --------------------------------------------------------------------
+// (none required)
+
+
+//
+// VARIABLES
+// --------------------------------------------------------------------
+int auto_play           = 0;                // Toggle Auto-Play
+int direction           = LEFT_TO_RIGHT;    // Direction to move
+int left_button         = XB1_LEFT;         // Button to use to slide left
+int right_button        = XB1_RIGHT;        // Button to use to slide right
+int up_button           = XB1_UP;           // Button to use to slide up
+int down_button         = XB1_DOWN;         // Button to use to slide down
+int A_button            = XB1_A;            // Button to the NPC at the end
+
+
+//
+// INITIALIZATION
+// --------------------------------------------------------------------
+// (none required)
+
+
+//
+// MAIN
+// --------------------------------------------------------------------
+main {
+
+  // Toggle Activate Auto-Play
+  if (event_press(XB1_RS)) {
+    auto_play = !auto_play
+//
+//
+//
+// THE PATH
+// --------------------------------------------------------------------
+//
+//
+//
+// FUNCTIONS
+// --------------------------------------------------------------------
+// (none required)
