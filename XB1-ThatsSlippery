@@ -1,46 +1,24 @@
 /* =====================================================================
-* Pier Solar That's Slippery Auto-Play
-* 
-*
-*  Details:
+* Pier Solar - Nerves of Steel Auto-Play
 *    Pressing Left Trigger will start autoplay for "Nerves of Steel"
 *    Pressing LB will end this combo whilst it's running.
-*    Pressing Right Trigger will start autoplay for "That's Slippery"
-*    Pressing RB will end this combo whilst it's running.
 * ===================================================================== */
 
-
-//
-// DEFINES
-// --------------------------------------------------------------------
-
-int i;
+// DEFINES----------------------------------
 
 define up = XB1_UP;
 define dn = XB1_DOWN;
 define le = XB1_LEFT;
 define ri = XB1_RIGHT;
 
-//
-// MAIN
-// --------------------------------------------------------------------
+// MAIN----------------------------------
 
 main {
-
-  if(event_press(XB1_LT))combo_run(nerves_of_steel)
-  
+  if(event_press(XB1_LT))combo_run(nerves_of_steel)  
   if(event_press(XB1_LB))combo_stop(nerves_of_steel)
-  
-  if(event_press(XB1_RT))combo_run(thatsslippery)
-  
-  if(event_press(XB1_RB))combo_stop(thatsslippery)
-
 }
 
-
-//
-// THE PATH
-// --------------------------------------------------------------------
+// THE PATH----------------------------------
 
 combo nerves_of_steel {
 
@@ -1296,25 +1274,9 @@ set(up);
 wait(960);
 }
 
-combo thatsslippery {
-
-set(dn);
-wait(960);
-
-}
-
-//
-//
-// FUNCTIONS
-// --------------------------------------------------------------------
+// FUNCTIONS----------------------------------
 
 function set(button)
 {
   set_val(button, 100);
 }
-
-// might not be needed
-// function rel(button)
-// {
-//   set_val(button, 0);
-// }
