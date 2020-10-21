@@ -1318,25 +1318,3 @@ function set(button)
 // {
 //   set_val(button, 0);
 // }
-
-
-// DEVELOPMENT NOTES
-// Below are the directions written by me that need converting into the regular input code, they're just here for reference/backup.
-// 
-// The game map and all sprites are layed out in a square 'grid'. This script is to be run the moment you spawn in the map, and
-// should finish you off infront of the NPC at the end of the map for you to press A and speak to. After which, you run the second
-// script in order to make the journey back. This code should be set out so that the only button you should be pressing to move is RS,
-// with no directional buttons pressed at all.
-//
-// I also need to work out how much time there is to navigate across 1 block on the 'grid'. Your character can not stand/turn inbetween
-// the 'squares' on the 'grid' both on land and whilst sliding, and so that amount of time needs to be measured. This will be trial and
-// error, but once we figure out the measurement of "1", the rest will fall into place. I haven not yet determined if the sliding
-// speed is the same as the walking speed on normal ground - this will be discovered in tests, when alternating between the very start
-// of the map to the very start of sliding. Once discovering the timing of one block and how much time there needs to be between button
-// presses.
-//
-// Not sure if requed if the timing is correct, but I noticed when playing that the character will not turn whilst sliding unless the
-// DPad button is held down when it is time to turn, meaning the DPad cannot be 'tapped' when required.
-//
-// From my tests, it looks like navigating each sliding block is running at 250bpm, meaning each button input length must hold for 240ms.
-
