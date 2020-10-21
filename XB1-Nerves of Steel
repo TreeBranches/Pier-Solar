@@ -1,5 +1,8 @@
 /* =====================================================================
 * Pier Solar - Nerves of Steel Auto-Play
+* Note that this is the full script, which will not fit in the 4096 byte
+* size limit of the CronusMax. Once the script is ready, split files will
+* be provided.
 *    Pressing Left Trigger will start autoplay for "Nerves of Steel"
 *    Pressing LB will end this combo whilst it's running.
 * ===================================================================== */
