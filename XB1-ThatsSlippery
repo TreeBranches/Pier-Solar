@@ -83,6 +83,8 @@ main {
 //
 // Not sure if requed if the timing is correct, but I noticed when playing that the character will not turn whilst sliding unless the
 // DPad button is held down when it is time to turn, meaning the DPad cannot be 'tapped' when required.
+//
+// From my tests, it looks like navigating each sliding block is running at 250bpm, meaning each button input length must hold for 240ms.
 
 D4
 R1
