@@ -22,7 +22,7 @@ I also need to work out how much time there is to navigate across 1 block on the
 
 Not sure if requed if the timing is correct, but I noticed when playing that the character will not turn whilst sliding unless the DPad button is held down when it is time to turn, meaning the DPad cannot be 'tapped' when required.
 
-From my tests, it looks like navigating each sliding block is running at 250bpm, meaning each button input length must hold for 240ms.
+From my tests, it looks like turning at each block takes 242ms. This was tested by mounting onto the maze and having the character move left/right/left/right continuously until I was able to do so for an extended period of time.
 
 I'm not sure what the limitations of the Chronus Max are, but due to the length of this script it might need things split up or condenseed....
 
