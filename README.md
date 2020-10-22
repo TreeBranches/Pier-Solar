@@ -24,6 +24,8 @@ Not sure if requed if the timing is correct, but I noticed when playing that the
 
 From my tests, it looks like turning at each block takes 242ms. This was tested by mounting onto the maze and having the character move left/right/left/right continuously until I was able to do so for an extended period of time.
 
+However, going straight appears to take a little less time, however I'm not sure if it's either a varied amount or something between 7ms and 8ms. So every 40 2x block turns, I decrease the two block time from 484ms to 474ms. This allowed me to slide a continuous 2x2 block stream for 300+ turns, which should be sufficient.
+
 I'm not sure what the limitations of the Chronus Max are, but due to the length of this script it might need things split up or condenseed....
 
 ### Raw directions
