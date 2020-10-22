@@ -26,7 +26,7 @@ From my tests, it looks like turning at each block takes 242ms. This was tested 
 
 However, going straight appears to take a little less time, however I'm not sure if it's either a varied amount or something between 7ms and 8ms. So every 40 2x block turns, I decrease the two block time from 484ms to 474ms. This allowed me to slide a continuous 2x2 block stream for 300+ turns, which should be sufficient.
 
-I'm not sure what the limitations of the Chronus Max are, but due to the length of this script it might need things split up or condenseed....
+After further testing, I have discovered and come to the conclusion that sliding in a straight line for any more than 2 blocks causes your character to 'jump' forward somewhat by a varying amount of frames each time - you can witness the jump whilst your character is sliding through long stretches of the maze, as he gradualls shifts to the edge of the screen. This means that although timings might be consistent throughout in the script, the slight variances in the speed of the character is enough to throw the script off randomly at randomly times - parts of the script which I had previously conquered perfectly and can consistently get through without trouble, will suddenly, randomly start to fail, and not at the same points. It doesn't happen often, as there must be some kind of 'give' to the controls, but it is enough to make sure that this script is not 100% reliable, making this even more challenging....
 
 ### Raw directions
 
