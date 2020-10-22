@@ -32,6 +32,8 @@ If the latter is the case, then the slight variances in the speed of the charact
 
 I'm actually questioning whether it's even possible to script this now....
 
+There are 629 moves total, and as of the time of writing, I can regularly (about 40% of the time) get up to move 459.
+
 ### Raw directions
 
 Generally for my reference/backup. U/L/D/R is the direction, number is how many blocks (aka map grid squares) in that direction you need to move.
